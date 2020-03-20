@@ -1,0 +1,89 @@
+body {
+    background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  
+background: linear-gradient(to right, #004e92, #000428); 
+}
+header {
+    margin: 30px 0;
+    display: grid;
+    grid-template: 1fr / 2fr 5fr;
+}
+
+@media only screen and (max-width: 800px) {
+     header{
+       display: grid;    
+       grid-template: 130px 100px/ 100% ;
+  
+
+     }
+
+     
+  }
+
+.contenido {
+    padding:20px4
+}
+.contenido-principal {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+.presupuesto p{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.presupuesto p span {
+    font-weight: normal;
+}
+#gastos {
+    margin-bottom: 30px;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color:#004e92;
+    font-size: 22px;
+    margin-bottom:30px;
+}
+
+.logo{
+grid-area: 1 / 1 /2 /2;
+height: 200px;
+
+}
+
+.text-center{
+
+grid-area: 1 / 2 /2 /3;
+align-self: center;
+/*justify-self:center;*/
+
+}
+
+.text-center spam{
+  font-weight: bold;
+
+
+}
+
+@media only screen and (max-width: 800px) {
+    .text-center{
+       grid-area: 2/1/3/2;
+
+
+    }
+    
+    .logo{
+
+        grid-area: 1/1/2/2;
+        /*align-self: center;*/
+        justify-self: center;
+        height: 150px;
+        margin-left: 72px;  }
+    
+ }
